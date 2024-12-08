@@ -51,26 +51,3 @@ class BezierCurve {
 }
 
 
-
-
-    /*public static Point2D calculateBezierPoint(double t, ArrayList<Point2D> points) {
-        if (points.size() == 1) {
-            return points.get(0);
-        }
-
-        ArrayList<Point2D> newPoints = new ArrayList<>();//новый список,куда собираем новые точки,
-        //вычесленные между парами
-        for (int i = 0; i < points.size() - 1; i++) {
-            newPoints.add(interpolate(points.get(i), points.get(i + 1), t));
-        }
-
-        return calculateBezierPoint(t, newPoints);
-    }
-
-    private static Point2D interpolate(Point2D p1, Point2D p2, double t) {
-        double x = (1 - t) * p1.getX() + t * p2.getX();
-        double y = (1 - t) * p1.getY() + t * p2.getY();
-        return new Point2D(x, y);
-    }
-
-     */
